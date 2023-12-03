@@ -1,7 +1,1 @@
-
-{
-    "nome":"suzana",
-    "idade": "20",
-    "data_nascimento":"2003-10-23",
-    "curso":"Ciência da computação"
-}
+{"nome":"Suzana Araujo","idade":"20","data_nascimento":"2003-10-23","curso":["Ciência da Computação","Ciência de Dados"]}

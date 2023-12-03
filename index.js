@@ -33,6 +33,16 @@ fs.readFile("./file.json",'utf8',(erro, dados)=>{
 
         objetoJson.nome = "Suzana Araujo"    //alterando chave nome 
         objetoJson.curso = ["Ciência da Computação","Ciência de Dados"] 
+
+        fs.writeFile("./file.json", JSON.stringify(objetoJson),(erro)=>{    //strinfify > objeto p txt
+            if(erro){
+                console.log("Não foi possível escrever o arquivo")
+            }
+            else{
+                console.log("Arquivo escrito com sucesso!")
+            }
+        })
+
         console.log(objetoJson)
     }
 })
