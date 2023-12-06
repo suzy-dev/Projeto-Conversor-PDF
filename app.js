@@ -10,8 +10,10 @@ async function main(){
 
     let usuarios = new Table(dadosProcessados)
 
-    console.log(usuarios.header)
-    console.log(usuarios.rows)
+    console.log("headers:",usuarios.header)
+    console.log("rows:",usuarios.rows)
+    console.log("qtd rows:",usuarios.RowCount)
+    console.log("qtd columns:",usuarios.ColumnCount)
 }
 
 main()
