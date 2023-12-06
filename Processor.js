@@ -7,7 +7,7 @@ class Processor {
          let arr = row.split(",")
          rows.push(arr)
         })
-      console.log(rows)
+      return rows
    } 
 }
 
