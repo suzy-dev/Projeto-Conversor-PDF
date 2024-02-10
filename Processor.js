@@ -4,7 +4,7 @@ class Processor {
         let rows = []
 
         splitRows.forEach(row =>{
-         let arr = row.split(",")
+      let arr = row.split(",").map(value => value.replace(/"/g,'')) //a func map retira "" do conteudo
          rows.push(arr)
         })
       return rows
