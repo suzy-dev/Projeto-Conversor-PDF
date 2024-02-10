@@ -2,8 +2,10 @@ const Reader = require('./Reader.js')
 const Processor = require('./Processor.js')
 const Table = require('./Table.js')
 const HTMLParser = require('./HTMLParser.js')
+const Writer = require('./Writer.js')
 
 const leitor = new Reader()
+const escritor = new Writer()
 
 async function main(){
     let dados = await leitor.Read("./projeto-3-conversor.csv")
@@ -17,7 +19,10 @@ async function main(){
     // console.log("qtd columns:",usuarios.ColumnCount)
 
     let html = await HTMLParser.Parse(usuarios)
-    console.log(html)
+    
+
+    aleatorio = Date.now()
+    escritor.Write(`${aleatorio}.html`,html)
 }
 
 main()

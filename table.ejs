@@ -16,14 +16,15 @@
 
         </thead>
         <tbody>
-
             <% row.forEach(rows => { %>
-
-                <td> <%= rows %> </td>
-    
+                <tr>
+                    <% rows.forEach(cell => { %>
+                        <td> <%= cell %> </td>
+                    <% }) %>
+                </tr>
             <% }) %>
-
         </tbody>
+        
         
 
         
