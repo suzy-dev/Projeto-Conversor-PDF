@@ -21,7 +21,7 @@ async function main(){
     let html = await HTMLParser.Parse(usuarios)
     
 
-    aleatorio = Date.now()
+    aleatorio = Date.now() //gera um arquivo aleatorio
     escritor.Write(`${aleatorio}.html`,html)
 }
 
