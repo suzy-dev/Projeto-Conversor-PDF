@@ -3,6 +3,7 @@ const Processor = require('./Processor.js')
 const Table = require('./Table.js')
 const HTMLParser = require('./HTMLParser.js')
 const Writer = require('./Writer.js')
+const PDFWriter = require('./PDFWriter.js')
 
 const leitor = new Reader()
 const escritor = new Writer()
@@ -23,6 +24,8 @@ async function main(){
 
     aleatorio = Date.now() //gera um arquivo aleatorio
     escritor.Write(`${aleatorio}.html`,html)
+
+    PDFWriter.WritePDF(`${aleatorio}.pdf`,html)
 }
 
 main()

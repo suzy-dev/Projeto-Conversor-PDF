@@ -1,8 +1,12 @@
-import pdf from 'html';
+const pdf = require('html-pdf') 
 
-export class PDFWriter{
+class PDFWriter{
 
     static WritePDF(filename, html){
-        
+        pdf.create(html).toFile(filename,(err)=>{
+            console.log(err)
+        })
     }
 }
+
+module.exports = PDFWriter
