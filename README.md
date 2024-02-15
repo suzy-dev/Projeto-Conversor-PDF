@@ -27,5 +27,3 @@
     <p>Para executar o projeto, basta rodar o script principal <code>app.js</code>. Certifique-se de ter instaladas todas as dependências especificadas no arquivo <code>package.json</code>. O arquivo CSV a ser convertido deve estar localizado no mesmo diretório do script principal ou deve-se fornecer o caminho correto como parâmetro para o método <code>Read()</code>.</p>
     <pre><code>node app.js</code></pre>
     <p>Após a execução, o projeto irá gerar um arquivo HTML e um arquivo PDF com os dados convertidos do arquivo CSV.</p>
-    
-   <h2>Este é um resumo do projeto Conversor PDF, fornecendo uma visão geral de seu objetivo, tecnologias utilizadas e como executá-lo.</h2>
